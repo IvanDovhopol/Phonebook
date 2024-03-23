@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { register } from 'redux/auth/operations';
+import { register } from '../../redux/auth/operations';
 import { selectError, selectUser, selectLoading } from 'redux/auth/selectors';
 import { Formik } from 'formik';
 import * as Yup from 'yup';

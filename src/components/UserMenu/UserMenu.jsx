@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { logout } from 'redux/auth/operations';
+import { logout } from '../../redux/auth/operations';
 import { useAuth } from 'hooks';
 // import { FaUserCircle } from 'react-icons/fa';
 import { Wrapper, UserName, LogoutBtn, Avatar } from './styled';
