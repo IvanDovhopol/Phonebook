@@ -1,7 +1,11 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { login } from 'redux/auth/operations';
-import { selectError, selectUser, selectLoading } from '../../redux/auth/operations';
+import { login } from '../../redux/auth/operations';
+import {
+  selectError,
+  selectUser,
+  selectLoading,
+} from '../../redux/auth/selectors';
 import { Form, Label, Input, Title, Button, LoginRejected } from './styled';
 
 export const LoginForm = () => {
