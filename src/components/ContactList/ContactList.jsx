@@ -3,7 +3,7 @@ import {
   selectError,
   selectIsLoading,
   selectVisibleContacts,
-} from 'redux/contacts/selectors';
+} from '../../redux/contacts/selectors';
 import { Contact } from 'components/Contact';
 
 import PropTypes from 'prop-types';

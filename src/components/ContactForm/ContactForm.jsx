@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/contacts/operations';
+import { addContact } from '../../redux/contacts/operations';
 import {
   selectContacts,
   selectError,
   selectIsLoading,
-} from 'redux/contacts/selectors';
+} from '../../redux/contacts/selectors';
 import { addToast, errorToast } from 'constans/utils';
 import { Formik } from 'formik';
 import * as Yup from 'yup';

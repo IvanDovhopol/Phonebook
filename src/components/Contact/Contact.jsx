@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/contacts/operations';
+import { deleteContact } from '../../redux/contacts/operations';
 import { Row, Body, Button, Copy } from './styled';
 import { ImPhone } from 'react-icons/im';
 import { MdOutlineContentCopy } from 'react-icons/md';

@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Layout } from 'components/Layout';
 import { PrivateRoute } from 'components/PrivateRoute';
 import { RestrictedRoute } from 'components/RestrictedRoute';
-import { refreshUser } from 'redux/auth/operations';
+import { refreshUser } from '../../redux/auth/operations';
 import { useAuth } from 'hooks';
 
 const HomePage = lazy(() => import('pages/Home'));
