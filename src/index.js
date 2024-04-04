@@ -11,14 +11,14 @@ import './index.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ThemeProvider theme={theme}>
-      <BrowserRouter basename="/phonebook">
-        <PersistGate loading={null} persistor={persistor}>
-          <Provider store={store}>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <ThemeProvider theme={theme}>
+          <BrowserRouter basename="/phonebook">
             <App />
-          </Provider>
-        </PersistGate>
-      </BrowserRouter>
-    </ThemeProvider>
+          </BrowserRouter>
+        </ThemeProvider>
+      </PersistGate>
+    </Provider>
   </StrictMode>
 );
