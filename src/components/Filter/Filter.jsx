@@ -7,8 +7,6 @@ export const Filter = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
 
-  console.log('contacts in Filter', contacts);
-
   function changeFilter(e) {
     dispatch(filteredContacts(e.target.value));
   }

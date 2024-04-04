@@ -29,7 +29,6 @@ export const ContactForm = () => {
   const error = useSelector(selectError);
 
   const handleSubmit = ({ name, phone, email }, { resetForm }) => {
-    console.log('contacts ff', contacts.data.results);
     if (contacts.data.results.some(e => e.name === name)) {
       resetForm();
       return errorToast();

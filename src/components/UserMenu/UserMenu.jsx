@@ -7,7 +7,6 @@ import { Wrapper, UserName, LogoutBtn, Avatar } from './styled';
 export const UserMenu = () => {
   const dispatch = useDispatch();
   const user = useAuth();
-  console.log('user in usermenu', user);
 
   return (
     <Wrapper>
